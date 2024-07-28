@@ -160,9 +160,8 @@ nav {
 .opc {
     margin-top: 20px;
     position: relative;
-    max-width: 400px;
     width: 100%;
-    height: 60%;
+    height: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -185,6 +184,7 @@ nav {
 
 .opc-box a {
     margin-top: 10px;
+    font-size: 20px;
     font-family: "Noto Sans", sans-serif;
     font-weight: 900;
     color: #004479 !important;
@@ -240,7 +240,6 @@ nav {
     justify-content: center !important;
     min-width: 400px;
     min-height: 400px;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 }
 
 .carrosel-box h3 {
@@ -262,27 +261,6 @@ nav {
     margin: 10px;
 }
 
-.carrosel-box img:hover {
-    animation-name: shake;
-    animation-duration: 0.5s;
-    cursor: pointer;
-}
-
-@keyframes shake {
-    0% {
-      margin-left: 0rem;
-    }
-    25% {
-      margin-left: 0.5rem;
-    }
-    75% {
-      margin-left: -0.5rem;
-    }
-    100% {
-      margin-left: 0rem;
-    }
-  }
-
 .container-lang {
     height: 800px;
     display: flex;
@@ -290,7 +268,6 @@ nav {
     justify-content: center;
     align-items: center;
     margin-bottom: 100px;
-    background-color: #d6edff;
 }
 
 .container-lang h3 {
@@ -331,6 +308,12 @@ nav {
     align-items: center;
     flex-direction: column;
     border-radius: 10px;
+    transition: all 100ms ease-in-out;
+}
+
+.box-lang:hover {
+    cursor: pointer;
+    transform: rotate(5deg);
 }
 
 .shape-left {
@@ -346,7 +329,8 @@ nav {
 }
 
 .box-lang img {
-    height: 80px;
+    padding: 20px;
+    height: 140px;
 }
 
 .box-lang h4 {
@@ -513,4 +497,79 @@ nav {
     50%{
         opacity: 0;
     }
+}
+
+.dark-mode {
+    z-index: 99999;
+    position: fixed;
+    top: 50px;
+    right: 50px;
+}
+
+.dark-mode button {
+    width: 60px;
+    height: 60px;
+    border-style: none;
+    border-radius: 50%;
+    transition: all 60ms ease-in-out;
+}
+
+.dark-mode button:active {
+    transform: translateY(10px);
+}
+
+.dark-mode button i {
+    padding: 10px;
+}
+
+.dark {
+    background-color: #171717;
+    color: white;
+}
+
+.dark-nav {
+    background: rgb(23,23,23);
+    background: linear-gradient(0deg, rgba(23,23,23,1) 0%, rgba(43,43,43,1) 100%);
+}
+
+.dark-nav .nav-conteudo h3{
+    color: white !important;
+}
+
+.dark-nav .nav-conteudo button {
+    background: #004479;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.dark-nav .nav-conteudo a{
+    color: white !important;
+}
+
+.dark-opc-box a{
+    color: white !important;
+}
+
+.dark-container-lang h4{
+    color: white !important;
+}
+
+.dark-container-lang a{
+    color: white !important;
+}
+
+.dark-container-sobre .sobre-conteudo p{
+    color: white;
+}
+
+.dark-ct-contato {
+    background: rgb(23,23,23);
+    background: linear-gradient(180deg, rgba(23,23,23,1) 0%, rgba(43,43,43,1) 100%);
+}
+
+.dark-ct-contato .conteudo-footer h3 {
+    color: white;
+}
+
+.dark-subir {
+    background: #171717;
 }
