@@ -130,7 +130,7 @@ nav {
 }
 
 .container-img img {
-    height: 500px;
+    height: 450px;
 }
 
 .container-content {
@@ -180,6 +180,8 @@ nav {
     align-items: center;
     flex-direction: column;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    background: rgb(23,23,23);
+    background: linear-gradient(180deg, rgba(23,23,23,0) 35%, rgba(38,0,255,0.1516981792717087) 100%);
 }
 
 .opc-box a {
@@ -191,7 +193,7 @@ nav {
 }
 
 .opc-box img {
-    height: 100px;
+    height: 70px;
     transition: all 60ms ease-in-out;
 }
 
@@ -381,6 +383,10 @@ nav {
     align-items: center;
 }
 
+.img-footer img {
+    height: 300px;
+}
+
 .conteudo-footer {
     width: 50%;
     height: 100%;
@@ -510,7 +516,7 @@ nav {
     width: 60px;
     height: 60px;
     border-style: none;
-    border-radius: 50%;
+    border-radius: 10px;
     transition: all 60ms ease-in-out;
 }
 
@@ -543,6 +549,12 @@ nav {
 
 .dark-nav .nav-conteudo a{
     color: white !important;
+}
+
+.dark-opc-box {
+    border-bottom: 1px solid #2600ff;
+    background: rgb(23,23,23);
+    background: linear-gradient(180deg, rgba(23,23,23,0) 35%, rgba(38,0,255,0.11528361344537819) 100%);
 }
 
 .dark-opc-box a{

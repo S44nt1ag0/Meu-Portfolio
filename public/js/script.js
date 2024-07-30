@@ -26,11 +26,6 @@ $(document).ready(function(){
     function dark(){
         $("body").addClass("dark");
         $("nav").addClass("dark-nav");
-        $('#nav-img').attr("src", "./public/img/black/person.png");
-        $('#ass').attr("src", "./public/img/black/assinatura.png");
-        $('#mysql').attr("src", "./public/img/black/mysql.png");
-        $('#coding').attr("src", "./public/img/black/cloud-coding.png");
-        $('#coding2').attr("src", "./public/img/black/cloud-coding.png");
         $(".opc-box").addClass("dark-opc-box");
         $(".container-lang").addClass("dark-container-lang");
         $(".container-sobre").addClass("dark-container-sobre");
@@ -41,11 +36,6 @@ $(document).ready(function(){
     function light(){
         document.querySelector('body').classList.remove("dark");
         document.querySelector('nav').classList.remove("dark-nav");
-        document.querySelector('#nav-img').src = "./public/img/person.png";
-        document.querySelector('#ass').src = "./public/img/assinatura.png";
-        document.querySelector('#mysql').src = "./public/img/mysql.png";
-        document.querySelector('#coding').src = "./public/img/cloud-coding.png";
-        document.querySelector('#coding2').src = "./public/img/cloud-coding.png";
         $(".opc-box").removeClass("dark-opc-box")
         document.querySelector('.container-lang').classList.remove("dark-container-lang");
         $(".container-sobre").removeClass("dark-container-sobre")
